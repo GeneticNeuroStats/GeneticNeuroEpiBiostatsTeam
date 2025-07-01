@@ -1,4 +1,4 @@
-# Team Website
+# Genetic Neurodepidemiology and Biostatistics team Website
 
 This is the official team website for the Genetic Neurodepidemiology and Biostatistics group at BarcelonaBeta Brain Research Center
 
