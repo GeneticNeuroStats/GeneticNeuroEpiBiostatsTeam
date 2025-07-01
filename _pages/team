@@ -4,8 +4,15 @@ title: Our Team
 permalink: /team/
 ---
 
+<!-- Group photo at the top -->
+<img src="/assets/img/group-photo.jpg" alt="Group Photo" style="width: 100%; border-radius: 12px; margin-bottom: 30px;">
+
+<!-- Intro text (optional) -->
+We are a multidisciplinary research team working on genetic epidemiology, exposomics and data science.
+
+<!-- Loop through members -->
 {% for miembro in site.data.miembros %}
-<img src="{{ miembro.foto }}" alt="{{ miembro.nombre }}" width="150" style="border-radius: 8px; margin-bottom: 10px;">
+<img src="{{ miembro.foto }}" alt="{{ miembro.nombre }}" width="150" style="border-radius: 50%; display: block; margin: 20px auto;">
 
 ### {{ miembro.nombre }}
 
@@ -13,7 +20,30 @@ permalink: /team/
 
 📧 [{{ miembro.email }}](mailto:{{ miembro.email }})
 
-🔗 [LinkedIn Profile]({{ miembro.linkedin }}){:target="_blank"}
+{% if miembro.linkedin %}
+🔗 [LinkedIn]({{ miembro.linkedin }}){:target="_blank"}
+{% endif %}
+
+{% if miembro.orcid %}
+🧬 [ORCID]({{ miembro.orcid }}){:target="_blank"}
+{% endif %}
+
+{% if miembro.scholar %}
+🔬 [Google Scholar]({{ miembro.scholar }}){:target="_blank"}
+{% endif %}
+
+{% if miembro.bio %}
+**Bio**: {{ miembro.bio }}
+{% endif %}
+
+{% if miembro.interests %}
+**Research Interests**:
+<ul>
+  {% for item in miembro.interests %}
+    <li>{{ item }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
 
 ---
 
