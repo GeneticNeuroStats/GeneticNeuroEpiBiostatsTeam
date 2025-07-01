@@ -13,6 +13,8 @@ permalink: /team/
 
 📧 [{{ miembro.email }}](mailto:{{ miembro.email }})
 
+🔗 [LinkedIn Profile]({{ miembro.linkedin }}){:target="_blank"}
+
 ---
 
 {% endfor %}
