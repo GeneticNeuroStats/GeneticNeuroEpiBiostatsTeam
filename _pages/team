@@ -1,0 +1,18 @@
+---
+layout: page
+title: Our Team
+permalink: /team/
+---
+
+{% for miembro in site.data.miembros %}
+<img src="{{ miembro.foto }}" alt="{{ miembro.nombre }}" width="150" style="border-radius: 8px; margin-bottom: 10px;">
+
+### {{ miembro.nombre }}
+
+**Role**: {{ miembro.rol }}
+
+📧 [{{ miembro.email }}](mailto:{{ miembro.email }})
+
+---
+
+{% endfor %}
