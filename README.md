@@ -6,7 +6,7 @@ This is the official team website for the Genetic Neurodepidemiology and Biostat
 
 ## 🌐 Live Website
 You can visit the site here:  
-👉 **[https://geneticneurostats.github.io/team-website](https://geneticneurostats.github.io/GeneticNeuroEpiBiostatsTeam/))**
+👉 **[https://geneticneurostats.github.io/GeneticNeuroEpiBiostatsTeam](https://geneticneurostats.github.io/GeneticNeuroEpiBiostatsTeam/))**
 
 --- 
 
